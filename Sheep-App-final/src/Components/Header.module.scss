@@ -1,0 +1,46 @@
+@import "../variables";
+
+.header {
+    background-color: darkblue;
+    position: sticky;
+    top: 0;
+    padding: 0.5rem 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: '. h1 icon';
+    align-items: center;
+    @include box-shadowing;
+a {
+    grid-area: h1;
+    h1 {
+        @include reset-user-agent-margins;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.224);
+        color: white;
+        font-size: 1.5rem;
+    }
+}
+
+
+    .cart {
+        grid-area: icon;
+        .link {
+            position: relative;
+        }
+        .cartCounter {
+            border-radius: 50%;
+            background-color: $primaryBlue;
+            height: 1rem;
+            width: 1rem;
+            position: absolute;
+            top: -17px;
+            right: -29%;
+            color: rgb(250, 244, 244);
+            border: 1.5px solid $primaryPink;
+            p {
+                font-size: 0.65rem;
+                font-weight: 600;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.224);
+            }
+        }
+    }
+}

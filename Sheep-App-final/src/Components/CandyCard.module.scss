@@ -1,0 +1,23 @@
+@import "../variables";
+
+.card {
+    padding: 1rem;
+    min-width: 8rem;
+    @include box-shadowing;
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    .firstrow {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .secondrow {
+        display: flex;
+        justify-content:  space-between;
+    }
+    h3 {
+        text-align: left;
+    }
+}

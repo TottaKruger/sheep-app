@@ -1,0 +1,37 @@
+.main {
+    padding-top: 1rem;
+
+    .searchContainer {
+        input {
+            background-image: url('./SVG/searchborder.svg');
+            background-size: contain;
+            background-position: center center;
+            border: none;
+            background-repeat: no-repeat;
+            padding: 1rem;
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+    }
+
+    .candyCards {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        >* {
+            width: 38%;
+        }
+    }
+    .candyShopImage {
+        background-repeat: no-repeat;
+        width: 90vw;
+        height: 50vh;
+        background-size: contain;
+        margin: 0 auto;
+    }
+}

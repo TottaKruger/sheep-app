@@ -1,0 +1,16 @@
+$primaryPink: #cabbc2;
+$primaryBlue: #5f7c1b;
+
+@mixin reset-user-agent-margins {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+@mixin box-shadowing {
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.094);
+}
+@mixin text-shadowing {
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.094);
+}
